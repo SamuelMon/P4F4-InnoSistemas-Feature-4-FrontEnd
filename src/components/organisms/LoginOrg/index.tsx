@@ -20,7 +20,7 @@ const Index = () => {
 
     try {
       const response = await fetch(
-        "https://inno4-production.up.railway.app/auth/login",
+        "https://inno4-produccion.up.railway.app/auth/login",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -52,12 +52,12 @@ const Index = () => {
         <img
           src="/innoSistemasLogo.png"
           alt="InnoSistemas Logo"
-          className="w-[400px] h-[160px] object-contain"
+          className="w-[600px] h-[240px] object-contain"
         />
       </div>
       <form
         onSubmit={handleSubmit}
-        className="bg-white p-6 rounded shadow-md w-80 flex flex-col gap-4 mt-48"
+        className="bg-white p-6 rounded shadow-md w-80 flex flex-col gap-4 mt-64"
       >
         <h2 className="text-xl font-bold mb-2">Iniciar Sesión</h2>
         <InputText

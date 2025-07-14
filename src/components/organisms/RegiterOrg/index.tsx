@@ -38,7 +38,7 @@ const Index = () => {
       const timeoutId = setTimeout(() => controller.abort(), 10000);
 
       const response = await fetch(
-        "https://inno4-production.up.railway.app/auth/register",
+        "https://inno4-produccion.up.railway.app/auth/register",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -79,16 +79,16 @@ const Index = () => {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-transparent">
-      <div className="fixed top-1 mb-8">
+      <div className="fixed top-10 mb-8">
         <img
           src="/innoSistemasLogo.png"
           alt="InnoSistemas Logo"
-          className="w-[400px] h-[160px] object-contain"
+          className="w-[600px] h-[240px] object-contain"
         />
       </div>
       <form
         onSubmit={handleSubmit}
-        className="bg-white p-6 rounded shadow-md w-80 flex flex-col gap-4 mt-48"
+        className="bg-white p-6 rounded shadow-md w-80 flex flex-col gap-4 mt-64"
       >
         <h2 className="text-xl font-bold mb-2">Registro</h2>
         <InputText
